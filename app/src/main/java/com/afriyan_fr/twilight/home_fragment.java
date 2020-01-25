@@ -43,7 +43,7 @@ public class home_fragment extends Fragment {
         btn3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"3",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getActivity(),jenisfotografi.class));
             }
         });
         btn4.setOnClickListener(new View.OnClickListener(){
@@ -55,7 +55,7 @@ public class home_fragment extends Fragment {
         btn5.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"5",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getActivity(),tipsntrik.class));
             }
         });
         btn6.setOnClickListener(new View.OnClickListener(){
