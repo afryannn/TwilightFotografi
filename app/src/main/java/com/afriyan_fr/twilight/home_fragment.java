@@ -1,5 +1,6 @@
 package com.afriyan_fr.twilight;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import org.w3c.dom.Text;
 
 public class home_fragment extends Fragment {
 
+    public Intent intent;
     public  TextView txt;
     @Nullable
     @Override
@@ -25,17 +27,17 @@ public class home_fragment extends Fragment {
         CardView btn3 = view.findViewById(R.id.card1n3);
         CardView btn4 = view.findViewById(R.id.card2n4);
         CardView btn5 = view.findViewById(R.id.card2n2i);
-        CardView btn6 = view.findViewById(R.id.card2n3);
+        final CardView btn6 = view.findViewById(R.id.card2n3);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"1",Toast.LENGTH_LONG).show();
+               startActivity(new Intent(getActivity(),dasarfotografi.class));
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"2",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getActivity(),jeniscamera.class));
             }
         });
         btn3.setOnClickListener(new View.OnClickListener(){
@@ -47,7 +49,7 @@ public class home_fragment extends Fragment {
         btn4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"4",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getActivity(),teknikfotografi.class));
             }
         });
         btn5.setOnClickListener(new View.OnClickListener(){
