@@ -210,7 +210,7 @@
                            android:layout_height="wrap_content">
                        <TextView
                                android:textSize="@dimen/_15sdp"
-                               android:text="Mengenal Exprosure"
+                               android:text="Mengenal Apperture"
                                android:textStyle="normal"
                                android:fontFamily="sans-serif"
                                android:layout_width="wrap_content"
