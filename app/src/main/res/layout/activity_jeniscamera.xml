@@ -17,7 +17,7 @@
         <Button
                 android:id="@+id/btnback"
                 android:background="@drawable/backarrow"
-                android:layout_width="@dimen/_28sdp"
+                android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_23sdp"/>
         <TextView
                 android:layout_width="wrap_content"
@@ -53,6 +53,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/camcard1"
                             app:cardCornerRadius="@dimen/_8ssp"
                             android:layout_centerInParent="true"
                             android:layout_height="@dimen/_90sdp"
@@ -93,6 +94,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/camcard2"
                             app:cardCornerRadius="@dimen/_8ssp"
                             android:layout_centerInParent="true"
                             android:layout_height="@dimen/_90sdp"
@@ -140,6 +142,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/camcard3"
                             app:cardCornerRadius="@dimen/_8ssp"
                             android:layout_centerInParent="true"
                             android:layout_height="@dimen/_90sdp"
@@ -180,6 +183,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/camcard4"
                             app:cardCornerRadius="@dimen/_8ssp"
                             android:layout_centerInParent="true"
                             android:layout_height="@dimen/_90sdp"
@@ -226,6 +230,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/camcard5"
                             app:cardCornerRadius="@dimen/_8ssp"
                             android:layout_centerInParent="true"
                             android:layout_height="@dimen/_90sdp"
@@ -266,6 +271,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/camcard6"
                             app:cardCornerRadius="@dimen/_8ssp"
                             android:layout_centerInParent="true"
                             android:layout_height="@dimen/_90sdp"
@@ -312,6 +318,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/camcard7"
                             app:cardCornerRadius="@dimen/_8ssp"
                             android:layout_centerInParent="true"
                             android:layout_height="@dimen/_90sdp"
@@ -334,7 +341,7 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_gravity="center_horizontal"
                                     android:textSize="@dimen/_10sdp"
-                                    android:text="Kamera DSLR"
+                                    android:text="Kamera Boutique"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>
                         </RelativeLayout>
@@ -352,6 +359,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/camcard8"
                             app:cardCornerRadius="@dimen/_8ssp"
                             android:layout_centerInParent="true"
                             android:layout_height="@dimen/_90sdp"
@@ -399,6 +407,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/camcard9"
                             app:cardCornerRadius="@dimen/_8ssp"
                             android:layout_centerInParent="true"
                             android:layout_height="@dimen/_90sdp"

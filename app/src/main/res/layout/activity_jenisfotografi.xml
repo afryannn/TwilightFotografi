@@ -17,7 +17,7 @@
         <Button
                 android:id="@+id/btnback"
                 android:background="@drawable/backarrow"
-                android:layout_width="@dimen/_28sdp"
+                android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_23sdp"/>
         <TextView
                 android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
                 android:textStyle="bold"
                 android:layout_marginLeft="@dimen/_15sdp"
                 android:textColor="@color/whiteColor"
-                android:textSize="20dp"/>
+                android:textSize="@dimen/_15sdp"/>
     </androidx.appcompat.widget.Toolbar>
     <ScrollView
             android:id="@+id/scrll"
@@ -150,7 +150,7 @@
                 android:id="@+id/line4"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_50sdp">
-            <androidx.cardview.widget.CardView
+                <androidx.cardview.widget.CardView
                     xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/card4"
                     android:layout_centerVertical="true"

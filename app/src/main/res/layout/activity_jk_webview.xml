@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/whiteColor"
-        tools:context=".df1">
+        tools:context=".Jk_webview">
 
     <androidx.appcompat.widget.Toolbar
             android:id="@+id/my_toolbar"
@@ -28,7 +28,7 @@
                 android:textColor="@color/whiteColor"
                 android:textSize="@dimen/_15sdp"/>
     </androidx.appcompat.widget.Toolbar>
-        <WebView
+    <WebView
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_below="@+id/my_toolbar"
             android:id="@+id/webview"
@@ -58,4 +58,5 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
     </LinearLayout>
+
 </RelativeLayout>
