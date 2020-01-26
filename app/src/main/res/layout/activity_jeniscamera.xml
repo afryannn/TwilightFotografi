@@ -33,11 +33,12 @@
             android:layout_width="match_parent" android:layout_height="match_parent">
     <LinearLayout
             android:id="@+id/induxbox"
-            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:layout_gravity="center"
             android:layout_width="@dimen/_280sdp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/_20sdp"/>
         <RelativeLayout
                 android:id="@+id/line1"
                 android:layout_width="match_parent"
@@ -428,7 +429,7 @@
                 </RelativeLayout>
             </LinearLayout>
         </RelativeLayout>
-        <TextView android:layout_width="300dp" android:layout_height="50dp"/>
+        <TextView android:layout_width="300dp" android:layout_height="@dimen/_20sdp"/>
     </LinearLayout>
     </ScrollView>
 

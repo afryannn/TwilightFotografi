@@ -6,6 +6,8 @@
     <color name="whiteColor">#fff</color>
     <color name="purpledark">#720352</color>
     <color name="f7white">#F7F7F7</color>
+    <color name="grey5">#FAFAFA</color>
+    <color name="grey4">#F5F5F5</color>
 
 
 </resources>
