@@ -2,6 +2,7 @@ package com.afriyan_fr.twilight;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
@@ -17,7 +18,15 @@ public class dasarfotografi extends AppCompatActivity {
         CardView btn3 = (CardView) findViewById(R.id.card1n6);
         CardView btn4 = (CardView) findViewById(R.id.card1n7);
         CardView btn5 = (CardView) findViewById(R.id.card1n8);
-
+        Button zxc = (Button) findViewById(R.id.btnback);
+        zxc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(dasarfotografi.this,MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
         btn1.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {

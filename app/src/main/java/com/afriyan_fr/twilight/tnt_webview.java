@@ -6,71 +6,72 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.TextView;
+import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Tf_webview extends AppCompatActivity {
+public class tnt_webview extends AppCompatActivity {
 
-    WebView webview;
+    WebView webView;
     ProgressBar pb;
-    Button back;
-    ImageView hoome;
     TextView txt;
+    Button back;
+    ImageView home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tf_webview);
-        webview = (WebView) findViewById(R.id.swebview);
+        setContentView(R.layout.activity_tnt_webview);
+        webView = (WebView) findViewById(R.id.swebview);
         pb = (ProgressBar) findViewById(R.id.progressbar);
-        back = (Button) findViewById(R.id.btnback);
-        hoome = (ImageView) findViewById(R.id.backtohome);
         txt = (TextView) findViewById(R.id.texttool);
-        String adm = getIntent().getExtras().getString("id");
-        webview.setWebViewClient(new myWebclient());
-        webview.getSettings().setJavaScriptEnabled(true);
-        hoome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Tf_webview.this,MainActivity.class);
-                startActivity(i);
-                finish();
-            }
-        });
+        back = (Button) findViewById(R.id.btnback);
+        home = (ImageView) findViewById(R.id.backtohome);
+        webView.setWebViewClient(new myWebclient());
+        String abc = getIntent().getExtras().getString("id");
+        webView.getSettings().setJavaScriptEnabled(true);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Tf_webview.this,teknikfotografi.class);
+                Intent i = new Intent(tnt_webview.this,tipsntrik.class);
                 startActivity(i);
                 finish();
             }
         });
-        switch (adm){
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(tnt_webview.this,MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+        switch (abc){
             case "1":
-                txt.setText("Macam Teknik Fotografi");
-                webview.loadUrl("http://twilightfotografi.club/macam-teknik-fotografi/");
+                txt.setText("Perbedaan DSLR dan Mirrorless");
+                webView.loadUrl("http://twilightfotografi.club/2019/11/22/10-perbedaan-kamera-mirrorless-dan-dslr/");
                 break;
             case "2":
-                txt.setText("Field of View");
-                webview.loadUrl("http://twilightfotografi.club/field-of-view/");
+                txt.setText("20 Tips Fotografi");
+                webView.loadUrl("http://twilightfotografi.club/2019/11/20/20-tips-fotografi-keren-untuk-para-pemula/");
                 break;
             case "3":
-                txt.setText("Angle of View");
-                webview.loadUrl("http://twilightfotografi.club/angle-of-view/");
+                txt.setText("4 Memotret Objek Bergerak");
+                webView.loadUrl("http://twilightfotografi.club/2019/11/20/memotret-objek-bergerak/");
                 break;
+            case "4":
+                txt.setText("10 cara merawat DSLR");
+                webView.loadUrl("http://twilightfotografi.club/2019/11/20/tips-trik/");
+                break;
+
         }
     }
     public void onBackPressed() {
-        Intent i = new Intent(Tf_webview.this,teknikfotografi.class);
+        Intent i = new Intent(tnt_webview.this,tipsntrik.class);
         startActivity(i);
         finish();
         super.onBackPressed();
     }
-
     public class myWebclient extends WebViewClient {
         @Override
         public void onPageFinished(WebView view, String url) {
@@ -91,11 +92,10 @@ public class Tf_webview extends AppCompatActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if((keyCode==KeyEvent.KEYCODE_BACK) && webview.canGoBack()){
-            webview.goBack();
+        if((keyCode==KeyEvent.KEYCODE_BACK) && webView.canGoBack()){
+            webView.goBack();
             return true;
         }
         return super.onKeyDown(keyCode,event);
     }
-
 }

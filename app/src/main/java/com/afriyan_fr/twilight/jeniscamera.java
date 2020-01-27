@@ -2,6 +2,7 @@ package com.afriyan_fr.twilight;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
@@ -23,6 +24,15 @@ public class jeniscamera extends AppCompatActivity {
         card7 = (CardView) findViewById(R.id.camcard7);
         card8 = (CardView) findViewById(R.id.camcard8);
         card9 = (CardView) findViewById(R.id.camcard9);
+        Button jkl = (Button) findViewById(R.id.btnback);
+        jkl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(jeniscamera.this,MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
