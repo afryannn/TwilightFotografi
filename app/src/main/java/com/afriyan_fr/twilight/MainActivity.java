@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.nav_about:
                             selectedFragment = new about_fragment();
                             break;
-                        case R.id.nav_contact:
-                            selectedFragment = new contact_fragment();
-                            break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();

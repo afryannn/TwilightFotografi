@@ -28,11 +28,14 @@
                 android:textColor="@color/whiteColor"
                 android:textSize="@dimen/_15sdp"/>
     </androidx.appcompat.widget.Toolbar>
+
     <ScrollView
             android:id="@+id/scrll"
             android:layout_below="@id/my_toolbar"
             android:layout_centerInParent="true"
-            android:layout_width="match_parent" android:layout_height="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
     <LinearLayout
             android:id="@+id/induxbox"
             android:layout_gravity="center"
@@ -40,7 +43,9 @@
             android:layout_width="@dimen/_280sdp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView android:layout_width="match_parent" android:layout_height="@dimen/_30sdp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"/>
         <RelativeLayout
                 android:id="@+id/line1"
                 android:layout_width="match_parent"

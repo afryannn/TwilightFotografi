@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Twilight</string>
+    <string name="email">
+        <a href="twilightfotografi@gmail.com">twilightfotografi@gmail.com</a>
+    </string>
+    <string name="ig">
+        <a href="@twilightfotografi">@twilightfotografi</a>
+    </string>
 </resources>

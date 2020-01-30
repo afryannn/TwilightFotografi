@@ -7,39 +7,65 @@
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:label="Twilight Fotografi"
+            android:roundIcon="@drawable/logo"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".Splashscreen">
+        <activity android:name=".kontak">
+        </activity>
+        <activity
+                android:name=".Splashscreen"
+                android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".tnt_webview">
+        <activity
+                android:name=".tnt_webview"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Tf_webview">
+        <activity
+                android:name=".Tf_webview"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Jf_webview">
+        <activity
+                android:name=".Jf_webview"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Jk_webview">
+        <activity
+                android:name=".Jk_webview"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".df1">
+        <activity
+                android:name=".df1"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".tipsntrik">
+        <activity
+                android:name=".tipsntrik"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".teknikfotografi">
+        <activity
+                android:name=".teknikfotografi"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".jenisfotografi">
+        <activity
+                android:name=".jenisfotografi"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".jeniscamera">
+        <activity
+                android:name=".jeniscamera"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".dasarfotografi">
+        <activity
+                android:name=".dasarfotografi"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity
+                android:name=".MainActivity"
+                android:screenOrientation="portrait">
         </activity>
     </application>
 

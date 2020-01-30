@@ -1,7 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:background="#28398D"
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/whiteColor"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purpledark"
+            android:elevation="4dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentang"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/_15sdp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+            android:id="@+id/log"
+            android:layout_below="@id/my_toolbar"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="@dimen/_10sdp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_margin="@dimen/_13sdp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp">
+        <ImageView
+                android:src="@drawable/splashlogo"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
 
+    <LinearLayout
+            android:id="@+id/val"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/log"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_200sdp">
+        <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/vmal"
+                android:layout_toRightOf="@+id/num2"
+                android:layout_centerVertical="true"
+                android:background="@color/whiteColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+            <LinearLayout
+                    android:background="@drawable/accentrec"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"/>
+
+             <LinearLayout
+                     android:orientation="vertical"
+                     android:layout_marginTop="@dimen/_20sdp"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+              <TextView
+                      android:textSize="@dimen/_13sdp"
+                      android:text="Twffilight Fotografi merupakan salah satu apilikasi belajar fotografi bagi pemula yang ingin mendalami ilmu fotografi,aplikasi ini bertujuan untuk  bebagi ilmu seputar dunia fotografi secara gratis,mulai dari sejarah fotografi,jenis kamera,jenis fotografi hingga tips dan trik untuk dapat anda pelajari dan praktekkan."
+                      android:layout_width="@dimen/_235sdp"
+                      android:layout_height="wrap_content"/>
+                 <TextView
+                         android:layout_marginTop="@dimen/_5sdp"
+                         android:textSize="@dimen/_13sdp"
+                         android:textColor="@color/purpledark"
+                         android:textStyle="bold"
+                         android:text="Semoga Bermanfaat"
+                         android:layout_width="@dimen/_235sdp"
+                         android:layout_height="wrap_content"/>
+             </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 </RelativeLayout>

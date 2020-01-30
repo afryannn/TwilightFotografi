@@ -5,6 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:background="@color/whiteColor"
         tools:context=".tnt_webview">
 
@@ -28,35 +29,43 @@
                 android:textColor="@color/whiteColor"
                 android:textSize="@dimen/_15sdp"/>
     </androidx.appcompat.widget.Toolbar>
-    <WebView
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_below="@+id/my_toolbar"
-            android:id="@+id/swebview"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+
+    <LinearLayout
+            android:background="#000"
+            android:id="@+id/linearweb"
+            android:layout_below="@id/my_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_525sdp">
-    </WebView>
+            android:layout_height="@dimen/_500sdp"
+            android:orientation="vertical">
+        <WebView
+                android:layout_below="@+id/my_toolbar"
+                android:id="@+id/swebview"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </WebView>
+    </LinearLayout>
     <ProgressBar
             style="?android:attr/progressBarStyle"
             android:layout_centerInParent="true"
             android:id="@+id/progressbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
     <LinearLayout
-            android:layout_below="@id/swebview"
-            android:background="@drawable/circlerec"
+            android:background="@color/whiteColor"
             android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:gravity="center"
-            android:layout_height="wrap_content">
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_height="@dimen/_28sdp">
         <ImageView
                 android:id="@+id/backtohome"
+                android:layout_gravity="center"
                 android:src="@drawable/home_vec"
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
     </LinearLayout>
-
 </RelativeLayout>
